@@ -1,0 +1,35 @@
+body{
+
+    background:#f5f7fa;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hero{
+
+    padding:120px 20px;
+
+    text-align:center;
+
+    background:linear-gradient(135deg,#0d6efd,#5bc0de);
+
+    color:white;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    font-weight:bold;
+
+}
+
+.hero p{
+
+    margin-top:20px;
+
+    font-size:22px;
+
+}
