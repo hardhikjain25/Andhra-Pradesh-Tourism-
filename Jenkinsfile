@@ -9,17 +9,12 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Verify') {
             steps {
-                sh 'mvn clean package'
+                sh 'pwd'
+                sh 'ls -la'
+                sh 'java -version'
             }
         }
-
-        stage('Docker Build') {
-            steps {
-                sh 'docker build -t andhra-tourism:v2 .'
-            }
-        }
-
     }
 }
