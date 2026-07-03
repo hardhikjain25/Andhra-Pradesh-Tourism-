@@ -1,0 +1,312 @@
+body{
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top:56px;
+}
+html{
+    scroll-behavior:smooth;
+}
+.navbar{
+
+    background:linear-gradient(90deg,#0d6efd,#2563eb);
+
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+
+}
+.nav-link{
+
+    transition:.3s;
+
+    border-radius:8px;
+
+    padding:8px 14px !important;
+
+}
+.nav-link:hover{
+
+    background:white;
+
+    color:#0d6efd !important;
+
+}
+/* ================= HERO SECTION ================= */
+.hero{
+
+    height:90vh;
+
+    background-image:url("/images/hero/hero.jpg");
+
+    background-repeat:no-repeat;
+
+    background-position:center;
+
+    background-size:cover;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content h1{
+
+    font-size:65px;
+
+    font-weight:bold;
+
+}
+
+.hero-content p{
+
+    font-size:24px;
+
+    margin:20px 0;
+
+}
+
+.hero-content .btn{
+
+    padding:15px 35px;
+
+    font-size:20px;
+
+}
+.card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    transition:all .35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+.card:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.30);
+
+}
+.card img{
+
+    height:250px;
+    object-fit:cover;
+    transition:.4s;
+
+}
+.card:hover img{
+
+    transform:scale(1.06);
+
+}
+footer{
+
+    margin-top:70px;
+
+}
+
+.card{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.card-body{
+
+    text-align:center;
+
+}
+.hero-title{
+
+    animation:fadeDown 1s ease;
+
+}
+
+.hero-subtitle{
+
+    animation:fadeUp 1.5s ease;
+
+}
+.hero-btn{
+
+    animation:fadeUp 2s ease;
+
+    border-radius:50px;
+
+    padding:15px 40px;
+
+    transition:.3s;
+
+}
+.hero-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(25,135,84,.45);
+
+}
+section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+}
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+.dark-mode{
+
+    background:#0f172a;
+
+    color:white;
+
+}
+.dark-mode .navbar{
+
+    background:linear-gradient(90deg,#111827,#1f2937) !important;
+
+    border-bottom:1px solid #3b82f6;
+
+}
+.dark-mode .nav-link:hover{
+
+    background:#2563eb;
+
+    color:white !important;
+
+}
+.dark-mode .card{
+
+    background:#1f1f1f;
+
+    border:1.5px solid #3b82f6;
+
+    color:white;
+
+    box-shadow:0 8px 20px rgba(59,130,246,.25);
+
+}
+.dark-mode footer{
+
+    background:#000 !important;
+
+}
+
+.dark-mode .card-body{
+
+    color:white;
+
+}
+.dark-mode .card:hover{
+
+    box-shadow:0 20px 45px rgba(59,130,246,.45);
+
+}
+.dark-mode h2,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode p{
+
+    color:white;
+
+}
+.dark-mode section h2{
+
+    color:#60a5fa;
+
+}
+#darkModeToggle{
+
+    width:55px;
+
+    height:42px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+}
+#darkModeToggle:hover{
+
+    transform:scale(1.08);
+
+}
