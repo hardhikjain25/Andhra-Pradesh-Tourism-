@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                sh 'mvn clean package'
             }
         }
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t andhra-tourism:v2 .'
+                sh 'docker build -t andhra-tourism:v2 .'
             }
         }
 
