@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: andhra-tourism-deployment
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: andhra-tourism
+
+  template:
+    metadata:
+      labels:
+        app: andhra-tourism
+
+    spec:
+      containers:
+      - name: andhra-tourism
+
+        image: hardhikjain158/andhra-tourism:v1
+
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 8081
